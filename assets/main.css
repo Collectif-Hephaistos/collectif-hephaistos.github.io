@@ -274,4 +274,24 @@ table td { border: 1px solid #e8e8e8; }
 
 .highlight .il { color: #099; }
 
+ul.navi { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: white; float: right; }
+
+ul.navi li { float: left; }
+
+.navi li a, .dropbtn { display: inline-block; /*color: red;*/ text-align: center; padding: 14px 16px; text-decoration: none; }
+
+.navi li a:hover, .dropdown:hover .dropbtn { background-color: lightgray !important; color: #2a7ae2 !important; }
+
+li.dropdown { display: inline-block; }
+
+.dropdown-content { display: none; position: absolute; background-color: white; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); z-index: 1; }
+
+.dropdown-content a { /*color: black !important;*/ padding: 12px 16px !important; text-decoration: none; display: block !important; text-align: left !important; }
+
+.dropdown-content a:hover { background-color: #f1f1f1; }
+
+.dropdown:hover .dropdown-content { display: block; }
+
+/*Adapted from : https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar*/
+
 /*# sourceMappingURL=main.css.map */
