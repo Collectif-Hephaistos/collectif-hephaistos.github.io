@@ -57,7 +57,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 @media screen and (max-width: 800px) { .wrapper { max-width: -webkit-calc(800px - (30px)); max-width: calc(800px - (30px)); padding-right: 15px; padding-left: 15px; } }
 
 /** Clearfix */
-.footer-col-wrapper:after, .wrapper:after { content: ""; display: table; clear: both; }
+.mid_wrapper:after, .large_wrapper:after, .footer-col-wrapper:after, .wrapper:after { content: ""; display: table; clear: both; }
 
 /** Icons */
 .svg-icon { width: 16px; height: 16px; display: inline-block; fill: #828282; padding-right: 5px; vertical-align: text-top; }
@@ -296,5 +296,31 @@ li.dropdown { display: inline-block; }
 
 /*Styling footer*/
 .site-footer { border-top: 1px solid #e8e8e8; padding: 10px 0 0; }
+
+/*Large wrappers*/
+.large_wrapper { max-width: -webkit-calc(800px + 400px); max-width: calc(800px + 400px); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
+
+@media screen and (max-width: 800px) { .large_wrapper { max-width: -webkit-calc(800px + 200px); max-width: calc(800px + 200px); padding-right: 15px; padding-left: 15px; } }
+
+.mid_wrapper { max-width: -webkit-calc(800px + 200px); max-width: calc(800px + 200px); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
+
+@media screen and (max-width: 800px) { .mid_wrapper { max-width: -webkit-calc(800px + 150px); max-width: calc(800px + 150px); padding-right: 15px; padding-left: 15px; } }
+
+/*styling homepage*/
+/*some code from : https://www.w3schools.com/Css/tryit.asp?filename=trycss3_flexbox_website2*/
+* { box-sizing: border-box; }
+
+/* Column container */
+.h_row { display: flex; flex-wrap: wrap; }
+
+/* Create two unequal columns that sits next to each other */
+/* Main column */
+.h_main { flex: 65%; background-color: white; padding: 0 20px 0 0; }
+
+/* Sidebar/left column */
+.h_side { flex: 35%; background-color: #f1f1f1; padding: 15px; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); z-index: 1; }
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) { .h_row { flex-direction: column; } }
 
 /*# sourceMappingURL=main.css.map */
