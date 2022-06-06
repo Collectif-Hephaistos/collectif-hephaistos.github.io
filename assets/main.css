@@ -274,7 +274,7 @@ table td { border: 1px solid #e8e8e8; }
 
 .highlight .il { color: #099; }
 
-/*Styling navbar*/
+/* ----- ----- ----- ----- ----- ----- Styling navbar  ----- ----- ----- ----- ----- ----- */
 /*Adapted from : https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar*/
 ul.navi { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: white; float: right; }
 
@@ -294,33 +294,36 @@ li.dropdown { display: inline-block; }
 
 .dropdown:hover .dropdown-content { display: block; }
 
-/*Styling footer*/
+/*  ----- ----- ----- ----- ----- ----- Styling footer ----- ----- ----- ----- ----- ----- */
 .site-footer { border-top: 1px solid #e8e8e8; padding: 10px 0 0; }
 
-/*Large wrappers*/
-.large_wrapper { max-width: -webkit-calc(800px + 400px); max-width: calc(800px + 400px); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
+/*  ----- ----- ----- ----- ----- ----- Large wrappers ----- ----- ----- ----- ----- ----- */
+.large_wrapper { max-width: -webkit-calc(800px + 500px); max-width: calc(800px + 500px); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
 
-@media screen and (max-width: 800px) { .large_wrapper { max-width: -webkit-calc(800px + 200px); max-width: calc(800px + 200px); padding-right: 15px; padding-left: 15px; } }
+@media screen and (max-width: 800px) { .large_wrapper { max-width: -webkit-calc(800px + 300px); max-width: calc(800px + 300px); padding-right: 15px; padding-left: 15px; } }
 
 .mid_wrapper { max-width: -webkit-calc(800px + 200px); max-width: calc(800px + 200px); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
 
 @media screen and (max-width: 800px) { .mid_wrapper { max-width: -webkit-calc(800px + 150px); max-width: calc(800px + 150px); padding-right: 15px; padding-left: 15px; } }
 
-/*styling homepage*/
+/*  ----- ----- ----- ----- ----- ----- Styling homepage ----- ----- ----- ----- ----- ----- */
 /*some code from : https://www.w3schools.com/Css/tryit.asp?filename=trycss3_flexbox_website2*/
 * { box-sizing: border-box; }
 
 /* Column container */
 .h_row { display: flex; flex-wrap: wrap; }
 
-/* Create two unequal columns that sits next to each other */
 /* Main column */
 .h_main { flex: 65%; background-color: white; padding: 0 20px 0 0; }
 
 /* Sidebar/left column */
 .h_side { flex: 35%; background-color: #f1f1f1; padding: 15px; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); z-index: 1; }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+/* Responsive layout : when the screen is <700px wide, make the columns stack */
 @media screen and (max-width: 700px) { .h_row { flex-direction: column; } }
+
+.blockdiv { background-color: #f1f1f1; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); z-index: 1; padding: 10px 10px 5px 10px; margin-right: 5px; margin-bottom: 20px; }
+
+/*  ----- ----- ----- ----- ----- ----- Styling something else ----- ----- ----- ----- ----- ----- */
 
 /*# sourceMappingURL=main.css.map */
